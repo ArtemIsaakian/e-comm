@@ -1,0 +1,92 @@
+.card {
+  border-radius: 40px;
+  transition: all 110ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f3f3f3;
+    border-radius: 40px;
+    padding: 22px 29px 34px 29px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin: 14px 0;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__info-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+  }
+
+  &__add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+
+    &.added {
+      pointer-events: none;
+    }
+  }
+
+  &__favorite-btn {
+    position: absolute;
+    top: 22px;
+    left: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #f8f8f8;
+    border-radius: 7px;
+    background: #fff;
+    transition: all 110ms ease-in-out;
+
+    &.is-favorite {
+      background: $pink;
+
+      & svg {
+        fill: #FF8585;
+
+        & path {
+          stroke: #FF8585;
+        }
+      }
+    }
+  }
+}

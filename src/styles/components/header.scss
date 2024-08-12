@@ -1,0 +1,51 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px 43px 45px;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    column-gap: 16px;
+    max-height: 680px;
+  }
+
+  &__logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    color: $grey;
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $grey;
+    cursor: pointer;
+  }
+}
